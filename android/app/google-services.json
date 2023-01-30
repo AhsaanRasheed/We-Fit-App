@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "873591813528",
+    "project_id": "we-fit-7e07a",
+    "storage_bucket": "we-fit-7e07a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873591813528:android:260a53915431e7dfba27ed",
+        "android_client_info": {
+          "package_name": "com.example.wefit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873591813528-1jd2jm4m3r7od29c6pq26c11j75ns6go.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wefit",
+            "certificate_hash": "a43f779a8148ff9718359d5829eea2de42716b98"
+          }
+        },
+        {
+          "client_id": "873591813528-vmahfdqq52jatjn0dleg43a4gg142ldd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-2QuYes6CrgvmGkN2APo4ur4-G9xU1hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873591813528-vmahfdqq52jatjn0dleg43a4gg142ldd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
