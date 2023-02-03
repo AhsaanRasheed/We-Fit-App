@@ -49,6 +49,7 @@ dependencies:
   grouped_list: ^5.1.2
   intl: ^0.17.0
   linkwell: ^2.0.6
+  
 
 dev_dependencies:
   flutter_test:
