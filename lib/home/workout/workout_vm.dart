@@ -18,7 +18,7 @@ class WorkoutVM extends BaseViewModel {
     WorkoutPlan('Jumping Jacks', 'assets/gifs/jumpingJack.gif', '00:30'),
     WorkoutPlan('Long Arm Crunches', 'assets/gifs/longArm.gif', 'x16'),
     WorkoutPlan('Bicycle Crunches', 'assets/gifs/bicycleCrunch.gif', 'x16'),
-    WorkoutPlan('Abdominal Crunches', 'assets/gifs/abdominalCrunch.gif', 'x16'),
+    WorkoutPlan('Abdominal Crunches', 'assets/gifs/abdominalCrunch_1.gif', 'x16'),
     WorkoutPlan('Heel Touch', 'assets/gifs/heelTouch.gif', 'x16'),
     WorkoutPlan('Flutter Flicks', 'assets/gifs/flutterflicks.gif', '00:30'),
     WorkoutPlan('Skipping Without Rope', 'assets/gifs/skipping.gif', '00:30'),
