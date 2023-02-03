@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:wefit/home/workout/exercise_plans_list.dart';
-import 'package:wefit/home/workout/exercise_plans_lists.dart';
+import 'package:wefit/home/workout/exercise_days_lists.dart';
 
 import '../../utils/constants.dart';
 import '../../utils/widgets.dart';
@@ -18,13 +17,13 @@ class WorkoutScreen extends ViewModelBuilderWidget<WorkoutVM> {
       scrollable: false,
       body: Column(
         children: [
-          myExerciseHeading(),
+          workoutHeading(),
           const SizedBox(height: 18),
           myExerciseList(size, viewModel),
           const SizedBox(height: 36),
           exerciseTabs(viewModel),
           const SizedBox(height: 24),
-          exerciseHeading(context, viewModel),
+          daysHeading(context, viewModel),
           exerciseTabView(viewModel, size),
         ],
       ),
@@ -39,20 +38,20 @@ class WorkoutScreen extends ViewModelBuilderWidget<WorkoutVM> {
 
 // CUSTOM WIDGETS
 
-Padding myExerciseHeading() {
+Padding workoutHeading() {
   return Padding(
     padding: const EdgeInsets.all(24),
     child: Row(
       children: const [
         Text('My Workout Plan', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
         Spacer(),
-        Expanded(flex: 2, child: WeButton(lable: 'Freinds Plans', height: 30)),
+        Expanded(flex: 2, child: WeButton(lable: 'Friends Plans', height: 30)),
       ],
     ),
   );
 }
 
-Padding exerciseHeading(BuildContext context, WorkoutVM viewModel) {
+Padding daysHeading(BuildContext context, WorkoutVM viewModel) {
   return Padding(
     padding: const EdgeInsets.all(24),
     child: Row(
@@ -74,12 +73,12 @@ Widget exerciseTabView(WorkoutVM viewModel, double size) {
   return Builder(
     builder: (context) {
       if (viewModel.selectedTab == 1) {
-        return workoutPlanss(viewModel.beginnerPlans);
+        return workoutDays(viewModel.Plans, 'begin');
       }
       if (viewModel.selectedTab == 2) {
-        return workoutPlanss(viewModel.intermediatePlans);
+        return workoutDays(viewModel.Plans, 'inter');
       } else {
-        return workoutPlanss(viewModel.advancedPlans);
+        return workoutDays(viewModel.Plans, 'advance');
       }
     },
   );
